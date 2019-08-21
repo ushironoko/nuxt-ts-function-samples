@@ -1,4 +1,8 @@
-export default {
+
+import { Configuration } from '@nuxt/types'
+
+const config: Configuration = {
+  srcDir: 'src/',
   mode: 'spa',
   /*
    ** Headers of the page
@@ -40,7 +44,7 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxt/typescript-build'],
   /*
    ** Build configuration
    */
@@ -51,3 +55,5 @@ export default {
     extend(config, ctx) {}
   }
 }
+
+export default config
