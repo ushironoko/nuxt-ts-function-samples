@@ -5,15 +5,17 @@
   "author": "ushironoko",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint": "eslint --ext src/**/*.ts.js,.vue --ignore-path .gitignore .",
+    "fix": "yarn lint --fix"
   },
   "dependencies": {
     "@nuxt/typescript-runtime": "^0.1.2",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue-function-api": "^2.2.0"
   },
   "devDependencies": {
     "@nuxt/types": "^0.2.4",

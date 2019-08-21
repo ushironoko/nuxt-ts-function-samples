@@ -2,8 +2,9 @@
 import { Configuration } from '@nuxt/types'
 
 const config: Configuration = {
-  srcDir: 'src/',
   mode: 'spa',
+  srcDir: 'src/',
+  buildModules: ['@nuxt/typescript-build'],
   /*
    ** Headers of the page
    */
@@ -31,7 +32,7 @@ const config: Configuration = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/vue-function-api'],
   /*
    ** Nuxt.js dev-modules
    */
